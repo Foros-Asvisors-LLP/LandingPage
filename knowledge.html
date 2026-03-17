@@ -128,22 +128,38 @@
             <p class="section__subheading">A collection of our firm's perspectives on the most relevant issues in M&A.
             </p>
 
-            <ul class="section__list">
-                <li>
-                    <strong>Market Perspectives.</strong> Our team regularly publishes analyses on sector-specific
-                    trends and the broader macroeconomic environment as it relates to strategic transactions.
-                </li>
-                <li>
-                    <strong>Transaction Case Studies.</strong> We deep-dive into complex deal structures and the
-                    creative solutions that were applied to overcome significant challenges, providing valuable lessons
-                    for future engagements.
-                </li>
-                <li>
-                    <strong>Industry Insights.</strong> Leveraging our deep expertise in technology and other core
-                    sectors, we offer unique viewpoints on how innovation and market shifts are impacting corporate
-                    strategy.
-                </li>
-            </ul>
+            <div class="grid-container grid--3">
+                <div class="card">
+                    <div class="card__image-wrap" style="height: 180px; width: 100%; border-radius: 4px; border: none;">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=400&auto=format&fit=crop"
+                            alt="Market Data" class="card__image">
+                    </div>
+                    <h3 class="card__title" style="font-size: 1.3rem; margin-top: 15px;">Market Perspectives</h3>
+                    <p class="section__text" style="font-size: 0.95rem;">Regularly published analyses on sector-specific
+                        trends and the broader macroeconomic environment as it relates to strategic transactions.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__image-wrap" style="height: 180px; width: 100%; border-radius: 4px; border: none;">
+                        <img src="https://images.unsplash.com/photo-1507679799987-c73779386bd0?q=80&w=400&auto=format&fit=crop"
+                            alt="Deal Analysis" class="card__image">
+                    </div>
+                    <h3 class="card__title" style="font-size: 1.3rem; margin-top: 15px;">Transaction Case Studies</h3>
+                    <p class="section__text" style="font-size: 0.95rem;">Deep-dives into complex deal structures and the
+                        creative solutions applied to overcome significant challenges in recent M&A engagements.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__image-wrap" style="height: 180px; width: 100%; border-radius: 4px; border: none;">
+                        <img src="https://images.unsplash.com/photo-1551288049-bbbda5366991?q=80&w=400&auto=format&fit=crop"
+                            alt="Tech Trends" class="card__image">
+                    </div>
+                    <h3 class="card__title" style="font-size: 1.3rem; margin-top: 15px;">Industry Insights</h3>
+                    <p class="section__text" style="font-size: 0.95rem;">Leveraging deep expertise in technology and
+                        other core sectors to offer unique viewpoints on innovation and market shifts impacting
+                        strategy.</p>
+                </div>
+            </div>
         </section>
 
         <!-- Firm News Section -->
@@ -151,13 +167,55 @@
             <h2 class="clients__heading">Firm News</h2>
             <p class="clients__subheading">Stay updated with the latest announcements, transaction closings, and firm
                 developments.</p>
-            <div class="clients__grid">
-                <div class="clients__logo">Press Releases</div>
-                <div class="clients__logo">Deal Closings</div>
-                <div class="clients__logo">Awards</div>
-                <div class="clients__logo">Events</div>
-                <div class="clients__logo">Hirings</div>
-                <div class="clients__logo">Community</div>
+            <div class="grid-container grid--3" style="max-width: 1200px; margin: 40px auto; padding: 0 20px;">
+                <div class="card card--value" style="padding: 20px;">
+                    <div
+                        style="color: var(--color-gold); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; margin-bottom: 10px;">
+                        Quarterly</div>
+                    <h3 class="card__title" style="font-size: 1.1rem; margin-bottom: 10px;">Press Releases</h3>
+                    <p style="font-size: 0.85rem; color: var(--color-text-body);">Official announcements and strategic
+                        media communications.</p>
+                </div>
+                <div class="card card--value" style="padding: 20px;">
+                    <div
+                        style="color: var(--color-gold); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; margin-bottom: 10px;">
+                        Recent</div>
+                    <h3 class="card__title" style="font-size: 1.1rem; margin-bottom: 10px;">Deal Closings</h3>
+                    <p style="font-size: 0.85rem; color: var(--color-text-body);">Updates on successfully executed
+                        transactions for our clients.</p>
+                </div>
+                <div class="card card--value" style="padding: 20px;">
+                    <div
+                        style="color: var(--color-gold); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; margin-bottom: 10px;">
+                        Recognition</div>
+                    <h3 class="card__title" style="font-size: 1.1rem; margin-bottom: 10px;">Awards</h3>
+                    <p style="font-size: 0.85rem; color: var(--color-text-body);">Acknowledging our commitment to
+                        excellence in advisory.</p>
+                </div>
+                <div class="card card--value" style="padding: 20px;">
+                    <div
+                        style="color: var(--color-gold); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; margin-bottom: 10px;">
+                        Upcoming</div>
+                    <h3 class="card__title" style="font-size: 1.1rem; margin-bottom: 10px;">Events</h3>
+                    <p style="font-size: 0.85rem; color: var(--color-text-body);">Conferences and webcasts featuring our
+                        senior partners.</p>
+                </div>
+                <div class="card card--value" style="padding: 20px;">
+                    <div
+                        style="color: var(--color-gold); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; margin-bottom: 10px;">
+                        Growth</div>
+                    <h3 class="card__title" style="font-size: 1.1rem; margin-bottom: 10px;">Hirings</h3>
+                    <p style="font-size: 0.85rem; color: var(--color-text-body);">Expanding our capacity with
+                        best-in-class advisory talent.</p>
+                </div>
+                <div class="card card--value" style="padding: 20px;">
+                    <div
+                        style="color: var(--color-gold); font-weight: 700; font-size: 0.75rem; text-transform: uppercase; margin-bottom: 10px;">
+                        Impact</div>
+                    <h3 class="card__title" style="font-size: 1.1rem; margin-bottom: 10px;">Community</h3>
+                    <p style="font-size: 0.85rem; color: var(--color-text-body);">Our efforts beyond the financial
+                        markets to drive positive change.</p>
+                </div>
             </div>
         </section>
     </main>
