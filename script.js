@@ -1,5 +1,5 @@
 /* ===================================================
-   FOROS ADVISORY LLP GROUP - JavaScript
+   FOROS ADVISORS LLP GROUP - JavaScript
    =================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loaderHTML = `
         <div class="loader-wrapper" id="loader">
             <div class="loader"></div>
-            <div class="loader-text">Foros Advisory LLP</div>
+            <div class="loader-text">Foros Advisors LLP</div>
         </div>
     `;
     document.body.insertAdjacentHTML('afterbegin', loaderHTML);
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dropdownLinks = document.querySelectorAll('.subnav__link--dropdown, .subnav__sec-link--dropdown');
     dropdownLinks.forEach(link => {
         link.addEventListener('click', (e) => {
-            e.preventDefault();
+            // e.preventDefault(); // Commented out to allow navigation to our-services.html
             link.classList.toggle('open');
         });
     });
