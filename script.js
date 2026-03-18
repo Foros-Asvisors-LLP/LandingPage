@@ -1,8 +1,30 @@
 /* ===================================================
-   FOROS ADVISORS LLP GROUP - JavaScript
+   FOROS ADVISORY LLP GROUP - JavaScript
    =================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
+    
+    // ---------- Loader Injection & Logic ----------
+    const loaderHTML = `
+        <div class="loader-wrapper" id="loader">
+            <div class="loader"></div>
+            <div class="loader-text">Foros Advisory LLP</div>
+        </div>
+    `;
+    document.body.insertAdjacentHTML('afterbegin', loaderHTML);
+
+    const loader = document.getElementById('loader');
+    
+    // Hide loader after full window load
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            if (loader) {
+                loader.classList.add('fade-out');
+                // Remove from DOM after transition
+                setTimeout(() => loader.remove(), 600);
+            }
+        }, 1000); // 1 second delay purely for aesthetics
+    });
 
     // ---------- Header Scroll Effect ----------
     const header = document.getElementById('main-header');
@@ -75,11 +97,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchData = [
         { title: "Home", url: "index.html", content: "premier boutique investment bank financial M&A transaction advice" },
         { title: "Who We Are", url: "who-we-are.html", content: "senior experienced strategic M&A advisors Jean Manas" },
-        { title: "Knowledge", url: "knowledge.html", content: "Insights industry trends M&A capital markets corporate initiatives news" },
-        { title: "Join Foros", url: "join-foros.html", content: "Career Analyst Program Associate Track Growth dedicated excellence" },
+        // { title: "Knowledge", url: "knowledge.html", content: "Insights industry trends M&A capital markets corporate initiatives news" },
+        // { title: "Join Foros", url: "join-foros.html", content: "Career Analyst Program Associate Track Growth dedicated excellence" },
         { title: "Contact Us", url: "contact-us.html", content: "Reach out New York headquarters info email contact" },
-        { title: "Our Core Values", url: "our-core-values.html", content: "Integrity Excellence Client focus Independence Respect" },
-        { title: "Our Approach", url: "our-approach.html", content: "Differentiated creative solutions senior-led honest advice" },
+        // { title: "Our Core Values", url: "our-core-values.html", content: "Integrity Excellence Client focus Independence Respect" },
+        // { title: "Our Approach", url: "our-approach.html", content: "Differentiated creative solutions senior-led honest advice" },
         { title: "Our Services", url: "our-services.html", content: "M&A Strategic Advisory Defense Raid Capital Markets expertise" },
         { title: "Our Team", url: "our-team.html", content: "Leadership Jean Manas Bankers Collaboration precision" }
     ];
