@@ -796,7 +796,7 @@ img {
 
 /* ---------- Content Sections ---------- */
 .section {
-    padding: 60px 20px;
+    padding: 10px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -813,8 +813,9 @@ img {
     font-weight: 400;
     color: var(--color-text-dark);
     line-height: 1.35;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-align: center;
+    align-items: center;
 }
 
 .section__heading--italic {
@@ -954,7 +955,7 @@ img {
 
 /* ---------- Clients Section ---------- */
 .clients {
-    padding: 60px 40px;
+    padding: 10px 40px;
     max-width: 1000px;
     margin: 0 auto;
     border-top: 1px solid #ddd;
